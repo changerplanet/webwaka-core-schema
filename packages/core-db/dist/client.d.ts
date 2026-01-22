@@ -23,5 +23,5 @@ export declare function disconnectPrisma(): Promise<void>;
 /**
  * Export the Prisma client instance
  */
-export declare const db: PrismaClient<import(".prisma/client").Prisma.PrismaClientOptions, never, import("@prisma/client/runtime/client").DefaultArgs>;
+export declare const db: PrismaClient<import(".prisma/client").Prisma.PrismaClientOptions, never, import("@prisma/client/runtime/library").DefaultArgs>;
 //# sourceMappingURL=client.d.ts.map
