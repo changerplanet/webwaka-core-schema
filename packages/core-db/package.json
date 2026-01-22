@@ -18,10 +18,12 @@
   "author": "WebWaka Platform Team",
   "license": "UNLICENSED",
   "dependencies": {
-    "@prisma/client": "^7.3.0"
+    "@prisma/client": "^7.3.0",
+    "dotenv": "^17.2.3"
   },
   "devDependencies": {
     "@types/node": "^22.0.0",
+    "ts-node": "^10.9.2",
     "typescript": "^5.7.0"
   },
   "peerDependencies": {
