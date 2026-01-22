@@ -163,12 +163,15 @@ model WhitelabelConfig {
 
 model AuditLog {
   @@schema("webwaka")
-  id        String @id @default(uuid())
-  action    String
-  actorId  String?
-  metadata Json?
-
-  createdAt DateTime @default(now())
+  id           String      @id @default(uuid())
+  action       AuditAction
+  entityType   String
+  entityId     String
+  actorUserId  String
+  tenantId     String?
+  changes      Json?
+  metadata     Json?
+  timestamp    DateTime    @default(now())
 }
 
 model SystemSetting {
@@ -199,4 +202,11 @@ enum RoleScope {
   @@schema("webwaka")
   PLATFORM
   TENANT
+}
+
+enum AuditAction {
+  @@schema("webwaka")
+  CREATE
+  UPDATE
+  DELETE
 }

@@ -1,0 +1,30 @@
+{
+  "name": "@webwaka/core-db",
+  "version": "1.0.0",
+  "description": "WebWaka Core Database Access Layer - Authoritative data access for Core entities",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "clean": "rm -rf dist"
+  },
+  "keywords": [
+    "webwaka",
+    "database",
+    "prisma",
+    "dal"
+  ],
+  "author": "WebWaka Platform Team",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "@prisma/client": "^7.3.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.7.0"
+  },
+  "peerDependencies": {
+    "@prisma/client": "^7.3.0"
+  }
+}
